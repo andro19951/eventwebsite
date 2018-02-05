@@ -15,4 +15,4 @@ class Event(models.Model):
     information = models.CharField(max_length=10000)
 
     def __str__(self):
-        return self.event_title + " - " + self.event_artist
+        return self.event_title + " - " + str(self.time)
