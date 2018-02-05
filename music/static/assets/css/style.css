@@ -776,7 +776,6 @@ input::-ms-input-placeholder {
     font-size: 0.875rem;
     width:35px;
     height: 35px;
-    border: 1px solid #fff;
     display: inline-block;
     line-height: 35px;
     text-align: center;
