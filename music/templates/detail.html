@@ -81,26 +81,85 @@
         <section id="stuff"  class="contact col-sm-12">
 
 <div class="head_title text-center">
-                            <h2>Events</h2>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+                            <h2>{{ event.event_title }}</h2>
+
                         </div>
 
-                                                                                {%  for event in all_events %}
-                            <div class="col-xs-4 mix cat1 cat2 " >
-                                <div class="single_mixi_portfolio">
-                                    <p  class="event_title">{{ event.event_title }}</p>
-                                    <img class="hovered_overlay"  src={{ event.event_logo }} alt="" />
-                                    <div class="mixi_portfolio_overlay" onclick="location.href='/'{{ event.event_title}}+'/'+{{ event.time }}">
-                                        <div class="overflow_hover_text" >
-                                            <p class="info">{{ event.time }}<p>
-                                            <p class="info">{{ event.genre }}<p>
-                                        </div>
+                            <div class="col-xs-6  " >
+                                                                    <img style="height: 35vw "  src={{ event.event_logo }} alt="" />
+
+                            </div>
+
+                            <div class="col-xs-6  " >
+                                <ul>
+                                    <li>price : {{ event.event_tkPrice }} € </li>
+                                    <li>artists: {{ event.event_artist }}  </li>
+                                    <li>date : {{ event.time }}  </li>
+
+                                    <li>{{ event.information }}  </li>
+                                </ul>
+                            </div>
+
+     <section id="contact"  class="contact col-xs-12">
+            <div class="container">
+                <div class="row">
+                    <div class="main_contact sections">
+                        <div class="head_title text-center">
+                            <h2>Contact</h2>
+                            <!--<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>-->
+                        </div>
+
+                        <div class="row">
+                            <div class="contact_contant">
+
+                                <div class="col-sm-6 col-xs-12">
+                                    <h4>Get in touch</h4>
+                                    <div class="single_contant_left">
+                                        <form action="#" id="formid">
+                                            <!--<div class="col-lg-8 col-md-8 col-sm-10 col-lg-offset-2 col-md-offset-2 col-sm-offset-1">-->
+
+                                            <div class="form-group">
+                                                <input type="text" class="form-control" name="name" placeholder="Full Name" required="">
+                                            </div>
+
+                                            <div class="form-group">
+                                                <input type="email" class="form-control" name="email" placeholder="Email" required="">
+                                            </div>
+
+                                            <div class="form-group">
+                                                <textarea class="form-control" name="message" rows="8" placeholder="Message"></textarea>
+                                            </div>
+
+                                            <div class="">
+                                                <input type="submit" value="Send" class="btn btn-primary">
+                                            </div>
+                                            <!--</div>-->
+                                        </form>
                                     </div>
                                 </div>
-                            </div>
-                                {% endfor %}
 
 
+                                <div class="col-sm-5 col-sm-offset-1 col-xs-12">
+                                    <div class="single_message_right_info">
+                                        <h4>Info :</h4>
+                                        <ul>
+                                            <li><a href="https://goo.gl/maps/BHb8DTKMcvC2"><i class="fa fa-home"></i> Peetri 6, 10416 Tallinn, Estonia
+                                                    </a></li>
+                                            <li><a href=""><i class="fa fa-phone"></i> 5331 5115</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div> <!-- End of messsage content-->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
         <footer id="footer" class="footer">
             <div class="container">

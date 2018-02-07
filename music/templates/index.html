@@ -114,11 +114,11 @@
                                                                                 {%  for event in all_events %}
                             <div class="col-xs-4 mix cat1 cat2 " >
                                 <div class="single_mixi_portfolio">
-                                    <p  class="event_title">{{ event.event_title }}</p>
-                                    <img class="hovered_overlay"  style="height: 25em "  src={{ event.event_logo }} alt="" />
+                                    <p  class="event_title" >{{ event.event_title }}</p>
+                                    <img class="hovered_overlay"  style="height: 25vw "  src={{ event.event_logo }} alt="" />
                                     <div class="mixi_portfolio_overlay" onclick="location.href='/'{{ event.event_title}}+'/'+{{ event.time }}">
-                                        <div class="overflow_hover_text" >
-                                            <p class="info">{{ event.time }}<p>
+                                        <div class="overflow_hover_text" onclick="location.href='/music/'+{{ event.id }}" >
+                                            <p class="info" onclick="location.href='/music/'+{{ event.id }}">{{ event.time }}<p>
                                             <p class="info">{{ event.genre }}<p>
                                         </div>
                                     </div>
