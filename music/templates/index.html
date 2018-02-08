@@ -158,7 +158,7 @@
         <section id="home" class="home" >
 
 
-<video autoplay loop muted width="100%" style="margin:0">
+<video autoplay loop muted  style=" position: fixed; right: 0;top: 0; min-width: 100%; min-height: 100%; ">
                  <source src={% static 'mainvideo.mp4' %}  type="video/mp4" >
                  Your browser does not support the video tag.
 </video>
@@ -187,7 +187,7 @@
 
 
                                     <div class="collapse navbar-collapse"  id="bs-example-navbar-collapse-1">
-                                        <ul class="nav navbar-nav navbar-right" >
+                                        <ul class="nav navbar-nav navbar-center" >
                                             <li><a href="#home">Home</a></li>
                                             <li><a href="#service">Events</a></li>
                                             <li><a href="#portfolio">Gallery</a></li>
@@ -206,6 +206,8 @@
         </header> <!--End of header -->
 
 
+        <section id="home" style="min-height: 45vw; background-color: transparent" class="contact col-sm-12">
+
 
 
         </section>
@@ -213,79 +215,68 @@
 
 
 
-        <section id="service"  class="contact col-sm-12">
+
+
+        <section id="service"  class="contact col-xs-12">
 
 <div class="head_title text-center">
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
                             <h2>Events</h2>
                         </div>
-
-                                                                                {%  for event in all_events %}
-                            <div class="col-xs-4 mix cat1 cat2 " >
-                                <div class="single_mixi_portfolio">
-                                    <p  class="event_title" >{{ event.event_title }}</p>
+            <div class="col-sm-1"></div>
+        <div class="col-sm-9">
+                                                                                {%  for event in all_events  %}
+                            <div class="col-sm-4 mix cat1 cat2  basiani" >
+                                <div class="single_mixi_portfolio ">
+                                    <h3  class="event_title" >{{ event.time }}</h3>
                                     <img class="hovered_overlay"  style="height: 35vw "  src={{ event.event_logo }} alt="" />
-                                    <div class="mixi_portfolio_overlay" onclick="location.href='/'{{ event.event_title}}+'/'+{{ event.time }}">
+                                    <div class="mixi_portfolio_overlay" >
                                         <div class="overflow_hover_text" onclick="location.href='/music/'+{{ event.id }}" >
-                                            <p class="info" onclick="location.href='/music/'+{{ event.id }}">{{ event.time }}<p>
-                                            <p class="info">{{ event.genre }}<p>
+                                            <p class="info" onclick="location.href='/music/'+{{ event.id }}">{{ event.event_artist }}<p>
+                                            <p class="info">{{ event.event_title }}<p>
+                                                                            <a href="https://www.facebook.com/halltallinn/"><i class="fa fa-facebook"></i></a>
+
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                                {% endfor %}
 
+                                {% endfor %}
+</div>
         </section>
-<section>
+<section id="gallery" class ="contact col-xs-12">
 
 <div class="head_title text-center">
-                            <h2>Gallery</h2>
+        <br>
+    <br>
+    <br>
+    <br>
+    <br>
                         </div>
-    <div id="jssor_1" style="position:relative;margin:0 auto;top:0px;left:0px;width:980px;height:480px;overflow:hidden;visibility:hidden;">
+    <div id="jssor_1" style="position:relative;margin:0 auto;top:0px;left:0px;width:980px;height:680px;overflow:hidden;visibility:hidden;">
         <!-- Loading Screen -->
         <div data-u="loading" class="jssorl-009-spin" style="position:absolute;top:0px;left:0px;width:100%;height:100%;text-align:center;background-color:rgba(0,0,0,0.7);">
             <img style="margin-top:-19px;position:relative;top:50%;width:38px;height:38px;" src="img/spin.svg" />
         </div>
-        <div data-u="slides" style="cursor:default;position:relative;top:0px;left:0px;width:980px;height:380px;overflow:hidden;">
+        <div data-u="slides" style="cursor:default;position:relative;top:0px;left:0px;width:980px;height:580px;overflow:hidden;">
             <div data-p="170.00">
-                <img data-u="image" src="img/031.jpg" />
-                <img data-u="thumb" src="img/031-s190x90.jpg" />
+                <img data-u="image" src={% static "assets/css/images/pf4.jpg" %} />
+                <img data-u="thumb" src={% static "assets/css/images/pf4.jpg" %} />
             </div>
             <div data-p="170.00">
-                <img data-u="image" src="img/032.jpg" />
-                <img data-u="thumb" src="img/032-s190x90.jpg" />
+                <img data-u="image" src={% static "assets/css/images/pf1.jpg" %}/>
+                <img data-u="thumb" src={% static "assets/css/images/pf1.jpg" %} />
             </div>
             <div data-p="170.00">
-                <img data-u="image" src="img/033.jpg" />
-                <img data-u="thumb" src="img/033-s190x90.jpg" />
+                <img data-u="image" src={% static "assets/css/images/pf6.jpg" %} >
+                <img data-u="thumb" src={% static "assets/css/images/pf6.jpg" %} />
             </div>
-            <div data-p="170.00">
-                <img data-u="image" src="img/034.jpg" />
-                <img data-u="thumb" src="img/034-s190x90.jpg" />
-            </div>
-            <div data-p="170.00">
-                <img data-u="image" src="img/035.jpg" />
-                <img data-u="thumb" src="img/035-s190x90.jpg" />
-            </div>
-            <div data-p="170.00">
-                <img data-u="image" src="img/036.jpg" />
-                <img data-u="thumb" src="img/036-s190x90.jpg" />
-            </div>
-            <div data-p="170.00">
-                <img data-u="image" src="img/037.jpg" />
-                <img data-u="thumb" src="img/037-s190x90.jpg" />
-            </div>
-            <div data-p="170.00">
-                <img data-u="image" src="img/038.jpg" />
-                <img data-u="thumb" src="img/038-s190x90.jpg" />
-            </div>
-            <div data-p="170.00">
-                <img data-u="image" src="img/039.jpg" />
-                <img data-u="thumb" src="img/039-s190x90.jpg" />
-            </div>
-            <div data-p="170.00">
-                <img data-u="image" src="img/040.jpg" />
-                <img data-u="thumb" src="img/040-s190x90.jpg" />
-            </div>
+
         </div>
         <!-- Thumbnail Navigator -->
         <div data-u="thumbnavigator" class="jssort101" style="position:absolute;left:0px;bottom:0px;width:980px;height:100px;background-color:#000;" data-autocenter="1" data-scale-bottom="0.75">
@@ -325,15 +316,16 @@
                 <div class="row">
                     <div class="main_contact sections">
                         <div class="head_title text-center">
-                            <h2>Contact</h2>
+
                             <!--<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>-->
                         </div>
 
                         <div class="row">
-                            <div class="contact_contant">
 
+                            <div class="contact_contant">
                                 <div class="col-sm-6 col-xs-12">
-                                    <h4>Get in touch</h4>
+                                                                <h3 class="centeringthisshit">Get in Touch</h3>
+
                                     <div class="single_contant_left">
                                         <form action="#" id="formid">
                                             <!--<div class="col-lg-8 col-md-8 col-sm-10 col-lg-offset-2 col-md-offset-2 col-sm-offset-1">-->
@@ -367,7 +359,7 @@
                                                     </a></li>
                                             <li><a href=""><i class="fa fa-phone"></i> 5331 5115</a></li>
                                             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2027.935581209438!2d24.726757451520957!3d59.45082548161171!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x469293781ac5fd37%3A0x217a9057f9324860!2sPeetri+6%2C+P%C3%B5hja-Tallinn%2C+P%C3%B5hja-Tallinna%2C+10411+Harju+maakond!5e0!3m2!1sen!2see!4v1518083807698"
-                                                    width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+                                                    width="400" height="250" frameborder="0" style="border:0" allowfullscreen></iframe>
                                         </ul>
                                     </div>
                                 </div>

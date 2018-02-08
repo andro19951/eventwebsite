@@ -5,7 +5,7 @@ from .models import Event
 
 
 def index(request):
-    all_events = Event.objects.all()
+    all_events = Event.objects.all().order_by('-id')
     context = dict(all_events=all_events)
 
     return render(request, 'index.html', context)

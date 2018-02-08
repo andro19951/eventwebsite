@@ -20,6 +20,8 @@ body {
     font-weight: 300;
 }
 
+.basiani{
+margin-bottom: 3em;}
 img {
     -moz-user-select: none;
     -webkit-user-select: none;
@@ -501,7 +503,10 @@ input::-ms-input-placeholder {
     height: 75px;
     opacity: 1;
 }
-
+.navbar-center{
+    float: right!important;
+    margin-right:30%;
+}
 .main_menu_bg{
     margin-top: 0px;
 
@@ -726,16 +731,14 @@ input::-ms-input-placeholder {
     color:#fff;
 }
 
-
-
 .single_mixi_portfolio{
     position:relative;
     float: left;
-    border: 3px solid #fff;
     width:100%;
 }
 .single_mixi_portfolio img{
     width:100%;
+    padding: 5%;
 }
 .single_mixi_portfolio:hover .mixi_portfolio_overlay{
     opacity:1;
@@ -755,13 +758,17 @@ input::-ms-input-placeholder {
 }
 .mixi_portfolio_overlay .overflow_hover_text{
     position: absolute;
+    padding:5%;
+    bottom:2%;
     top: 10%;
-    left: 10%;
-    width: 80%;
-    height: 80%;
+    left: 5%;
+    width: 90%;
+    height: 88%;
     background-color: #1f1f1f;
-    border: 20px solid #4e3391;
     padding: 90px 0px 0px 0px;
+}
+.centeringthisshit{
+    text-align: center;
 }
 .info{
     color:white;
