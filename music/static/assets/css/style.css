@@ -944,7 +944,7 @@ input::-ms-input-placeholder {
 }
 
 .scrollup:hover {
-    background: #503392;
+    background: cyan;
     opacity: 1;
 }
 

@@ -31,38 +31,7 @@ jQuery(document).ready(function ($) {
     wow.init();
 
 
-    /*---------------------------------------------*
-     * Counter 
-     ---------------------------------------------*/
 
-    $('.statistic-counter').counterUp({
-        delay: 10,
-        time: 2000
-    });
-
-
-
-
-
-
-    /* ---------------------------------------------------------------------
-     Carousel
-     ---------------------------------------------------------------------= */
-
-    $('.main_home_slider').owlCarousel({
-        responsiveClass: true,
-        autoplay: false,
-        items: 1,
-        loop: true,
-        dots: true,
-        nav: false,
-        navText: [
-            "<i class='lnr lnr-chevron-left'></i>",
-            "<i class='lnr lnr-chevron-right'></i>"
-        ],
-        autoplayHoverPause: true
-
-    });
 
 
 
@@ -106,6 +75,9 @@ jQuery(document).ready(function ($) {
             effects: 'fade rotateX(-45deg) translateY(-10%)'
         }
     });
+
+
+
 
 
 
