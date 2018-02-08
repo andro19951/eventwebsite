@@ -151,13 +151,24 @@
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
 
-        <header id="main_menu" class="header navbar-fixed-top">            
-            <div class="main_menu_bg">
-                <div class="container">
+
+
+
+
+        <section id="home" class="home" >
+
+
+<video autoplay loop muted width="100%" style="margin:0">
+                 <source src={% static 'mainvideo.mp4' %}  type="video/mp4" >
+                 Your browser does not support the video tag.
+</video>
+ <header id="main_menu"  class="header navbar-fixed-top">
+            <div class="main_menu_bg" style="opacity: 1">
+                <div class="container" style="opacity: 1">
                     <div class="row">
                         <div class="nave_menu">
-                            <nav class="navbar navbar-default" style="border: 0px solid black" id="navmenu">
-                                <div class="container-fluid"  style="background-color: #1f1f1f; border: 0px solid black">
+                            <nav class="navbar navbar-default"  id="navmenu">
+                                <div class="container-fluid" style="opacity: 1" >
                                     <!-- Brand and toggle get grouped for better mobile display -->
                                     <div class="navbar-header">
                                         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
@@ -176,17 +187,17 @@
 
 
                                     <div class="collapse navbar-collapse"  id="bs-example-navbar-collapse-1">
-                                        <ul class="nav navbar-nav navbar-right">
+                                        <ul class="nav navbar-nav navbar-right" >
                                             <li><a href="#home">Home</a></li>
                                             <li><a href="#service">Events</a></li>
                                             <li><a href="#portfolio">Gallery</a></li>
                                             <li><a href="#contact">Contact</a></li>
-                                        </ul>    
+                                        </ul>
                                     </div>
 
                                 </div>
                             </nav>
-                        </div>	
+                        </div>
                     </div>
 
                 </div>
@@ -197,26 +208,6 @@
 
 
 
-
-
-        <section id="home" class="home" >
-            <div class="overla"style="background-color: #1f1f1f;">
-                <div class="container">
-                    <div class="row">
-                        <br>
-                        <br>
-                        <br>
-                        <br>
-<video autoplay loop muted width="100%">
-                 <source src={% static 'mainvideo.mp4' %}  type="video/mp4" >
-
-                 Your browser does not support the video tag.
-</video>
-
-
-                    </div>
-                </div>
-            </div>
         </section>
 
 

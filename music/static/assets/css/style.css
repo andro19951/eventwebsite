@@ -495,20 +495,17 @@ input::-ms-input-placeholder {
     left: 0; 
     right: 0; 
     z-index: 300;
-    box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
-    -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
-    background-color:rgba(34, 61, 97, 0.64);
     -webkit-transition:all .3s;
     -moz-transition:all .3s;
     transition:all .3s;
     height: 75px;
-
+    opacity: 1;
 }
-
 
 .main_menu_bg{
     margin-top: 0px;
-    background-color: transparent;
+
+    background-color: rgba(50, 50, 55, 0.7);
 }
 .main_menu_bg .navbar-default {
     background-color: transparent; 
@@ -579,7 +576,7 @@ input::-ms-input-placeholder {
 .home .main_home .video_play_icon a i{
     color:#fff;
     border:2px solid #fff;
-    padding: 10px;
+
     font-size:30px;
     border-radius: 50%;
 
@@ -833,8 +830,18 @@ input::-ms-input-placeholder {
 .counter .main_counter .single_counter_right p{
     color:#fefefe;
 }
-
-
+.container-fluid{
+    border: 0px solid black;
+}
+#video_overlays{
+    position:absolute;
+    float:left;
+    width:100%;
+    height: 56vw;
+    opacity: 0.3;
+    background-color:#000;
+    z-index:300000;
+}
 
 /*contact section css*/
 .contact{
