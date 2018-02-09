@@ -26,7 +26,6 @@ class Event(models.Model):
 
 
 class Gallery(models.Model):
-    title=models.CharField(max_length=250)
     picture = models.ImageField(upload_to='music/static/assets/css/images')
 
     def __str__(self):

@@ -238,7 +238,10 @@
                                     <div class="mixi_portfolio_overlay" >
                                         <div class="overflow_hover_text" onclick="location.href='/music/'+{{ event.id }}" >
                                             <p class="info" onclick="location.href='/music/'+{{ event.id }}">{{ event.event_artist }}<p>
-                                            <p class="info">{{ event.event_title }}<p>
+                                            <p class="info">{{ event.event_stage1_name }}<p>
+                                            {% for i in event.event_stage1_artists  %}
+                                                                                        <p class="info">{{ i }}<p>
+                                            {% endfor %}
                                                                             <a href="https://www.facebook.com/halltallinn/"><i class="fa fa-facebook"></i></a>
 
                                         </div>
@@ -264,18 +267,14 @@
             <img style="margin-top:-19px;position:relative;top:50%;width:38px;height:38px;" src="img/spin.svg" />
         </div>
         <div data-u="slides" style="cursor:default;position:relative;top:0px;left:0px;width:980px;height:580px;overflow:hidden;">
+            {% for gallery in all_galleries %}
             <div data-p="170.00">
-                <img data-u="image" src={% static "assets/css/images/pf4.jpg" %} />
-                <img data-u="thumb" src={% static "assets/css/images/pf4.jpg" %} />
+
+
+                <img data-u="image" src={{  gallery.picture }} />
+                <img data-u="thumb" src={{  gallery.picture }} />
             </div>
-            <div data-p="170.00">
-                <img data-u="image" src={% static "assets/css/images/pf1.jpg" %}/>
-                <img data-u="thumb" src={% static "assets/css/images/pf1.jpg" %} />
-            </div>
-            <div data-p="170.00">
-                <img data-u="image" src={% static "assets/css/images/pf6.jpg" %} >
-                <img data-u="thumb" src={% static "assets/css/images/pf6.jpg" %} />
-            </div>
+           {% endfor %}
 
         </div>
         <!-- Thumbnail Navigator -->
