@@ -236,7 +236,7 @@
                                     <h3  class="event_title" >{{ event.time }}</h3>
                                     <img class="hovered_overlay basiann"    src={{ event.event_logo }} alt="" />
                                     <div class="mixi_portfolio_overlay" >
-                                        <div class="overflow_hover_text" onclick="location.href='/music/'+{{ event.id }}" >
+                                        <div class="overflow_hover_text" onclick="location.href='/events/'+{{ event.id }}" >
                                          <div>
                                              {%  for i in event.event_stage1_name  %}
 
@@ -257,7 +257,7 @@
                                                                                         <p class="artistinfo">{{ i }}<p>
                                             {% endfor %}
                                          {% endfor %}
-                                                                            <a href="https://www.facebook.com/halltallinn/"><i class="fa fa-facebook"></i></a>
+                                                                            <a class="facebookbutton" href="https://www.facebook.com/halltallinn/"><i class="fa fa-facebook"></i></a>
 </div>
                                         </div>
                                     </div>
@@ -341,7 +341,7 @@
                                                                 <h3 class="centeringthisshit">Get in Touch</h3>
 
                                     <div class="single_contant_left">
-                                        <form action="#" id="formid">
+                                        <form action="#" method="get" id="formid">
                                             <!--<div class="col-lg-8 col-md-8 col-sm-10 col-lg-offset-2 col-md-offset-2 col-sm-offset-1">-->
 
                                             <div class="form-group">
@@ -357,7 +357,7 @@
                                             </div>
 
                                             <div class="">
-                                                <input type="submit" value="Send" class="btn btn-primary">
+                                                <input type="submit" value="Send" name="Sendbtn" class="btn btn-primary">
                                             </div>
                                             <!--</div>--> 
                                         </form>

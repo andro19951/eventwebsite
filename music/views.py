@@ -2,6 +2,17 @@ from django.shortcuts import render
 from django.http import  Http404
 from .models import Event, Gallery
 
+from django.core.mail import send_mail
+
+
+def sendmail():
+
+    send_mail(
+        'Subject here',
+        'Here is the message.',
+        'me@example.com',
+        ['andro19951@gmail.com']
+    )
 
 def parser(event):
     if event.event_stage1_name=="Null":
@@ -29,6 +40,8 @@ def index(request):
     all_events = Event.objects.all().order_by('-id')
     for event in all_events:
         event=parser(event)
+    if(request.GET.get('Sendbtn')):
+        sendmail()
 
     all_galleries=Gallery.objects.all()
     context = dict(all_events=all_events, all_galleries=all_galleries)

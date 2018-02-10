@@ -424,6 +424,11 @@ Extra height css
 .margin-bottom-80 {
     margin-bottom: 80px;
 }
+.facebookbutton{
+    position:relative;
+    left:0;
+    bottom: 0;
+}
 .padding-top-20 {
     padding-top: 1.33rem;
 }

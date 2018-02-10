@@ -98,25 +98,32 @@
                                 <ul>
                                     <li>Price : {{ event.event_tkPrice }} € </li>
                                     <br>
-                                    <li>Artists: {{ event.event_stage1_name }}  </li>
-                                                                      <li class="info">{{ event.event_stage1_name }}</li>
+                                                                            {% for i in event.event_stage1_name  %}
+                                                                      <li class="info">{{ i  }}</li>
                                             {% for i in event.event_stage1_artists  %}
                                                                                         <p class="artistinfo">{{ i }}<p>
                                             {% endfor %}
-                                          <li class="info">{{ event.event_stage2_name }}</li>
+                                                                            {% endfor %}
+                                                                            {% for i in event.event_stage2_name %}
+                                          <li class="info">{{ i }}</li>
                                             {% for i in event.event_stage2_artists  %}
                                                                                         <p class="artistinfo">{{ i }}<p>
                                             {% endfor %}
-                                {% if event.event_stage3_name  %}
-                                          <li class="info">{{ event.event_stage3_name }}</li>
+                                                                            {% endfor %}
+
+                                                                         {% for i in event.event_stage3_name   %}
+                                          <li class="info">{{ i }}</li>
                                             {% for i in event.event_stage3_artists  %}
                                                                                         <p class="artistinfo">{{ i }}<p>
                                             {% endfor %}
-                                {%  endif  %}
+                                {%  endfor  %}
                                     <li>Date : {{ event.time }}  </li>
                                     <br>
                                     <br>
                                     <li>{{ event.information }}  </li>
+                                <br>
+                                    <br><br>
+                                    <br>
                                 </ul>
                             </div>
 
@@ -176,6 +183,7 @@
             </div>
         </section>
 
+
         <footer id="footer" class="footer">
             <div class="container">
                 <div class="main_footer">
@@ -183,19 +191,14 @@
 
                         <div class="col-sm-6 col-xs-12">
                             <div class="copyright_text">
-                                <p class=" wow fadeInRight" data-wow-duration="1s">Made with <i class="fa fa-heart"></i> by <a href="http://bootstrapthemes.co">Bootstrap Themes</a>2016. All Rights Reserved</p>
+                                <p class=" wow fadeInRight" data-wow-duration="1s"><i class="fa fa-copyright"></i> Pantom100 2018. All Rights Reserved</p>
                             </div>
                         </div>
 
                         <div class="col-sm-6 col-xs-12">
                             <div class="footer_socail">
-                                <a href=""><i class="fa fa-facebook"></i></a>
-                                <a href=""><i class="fa fa-twitter"></i></a>
-                                <a href=""><i class="fa fa-google-plus"></i></a>
-                                <a href=""><i class="fa fa-rss"></i></a>
-                                <a href=""><i class="fa fa-instagram"></i></a>
-                                <a href=""><i class="fa fa-dribbble"></i></a>
-                                <a href=""><i class="fa fa-behance"></i></a>
+                                <a href="https://www.facebook.com/halltallinn/"><i class="fa fa-facebook"></i></a>
+                                <a href="https://www.instagram.com/halltallinn/"><i class="fa fa-instagram"></i></a>
                             </div>
                         </div>
                     </div>
