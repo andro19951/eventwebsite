@@ -237,18 +237,26 @@
                                     <img class="hovered_overlay basiann"    src={{ event.event_logo }} alt="" />
                                     <div class="mixi_portfolio_overlay" >
                                         <div class="overflow_hover_text" onclick="location.href='/music/'+{{ event.id }}" >
-                                         <div>   <p class="info">{{ event.event_stage1_name }}</p>
+                                         <div>
+                                             {%  for i in event.event_stage1_name  %}
+
+                                             <p class="info">{{ i }}</p>
                                             {% for i in event.event_stage1_artists  %}
                                                                                         <p class="artistinfo">{{ i }}<p>
                                             {% endfor %}
-                                          <p class="info">{{ event.event_stage2_name }}</p>
+                                         {% endfor %}
+                                             {% for i in event.event_stage2_name   %}
+                                          <p class="info">{{ i }}</p>
                                             {% for i in event.event_stage2_artists  %}
                                                                                         <p class="artistinfo">{{ i }}<p>
                                             {% endfor %}
-                                          <p class="info">{{ event.event_stage3_name }}</p>
+                                         {% endfor %}
+                                          {% for i in event.event_stage3_name   %}
+                                          <p class="info">{{ i }}</p>
                                             {% for i in event.event_stage3_artists  %}
                                                                                         <p class="artistinfo">{{ i }}<p>
                                             {% endfor %}
+                                         {% endfor %}
                                                                             <a href="https://www.facebook.com/halltallinn/"><i class="fa fa-facebook"></i></a>
 </div>
                                         </div>

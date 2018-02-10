@@ -107,11 +107,12 @@
                                             {% for i in event.event_stage2_artists  %}
                                                                                         <p class="artistinfo">{{ i }}<p>
                                             {% endfor %}
+                                {% if event.event_stage3_name  %}
                                           <li class="info">{{ event.event_stage3_name }}</li>
                                             {% for i in event.event_stage3_artists  %}
                                                                                         <p class="artistinfo">{{ i }}<p>
                                             {% endfor %}
-
+                                {%  endif  %}
                                     <li>Date : {{ event.time }}  </li>
                                     <br>
                                     <br>

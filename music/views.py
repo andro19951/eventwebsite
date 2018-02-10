@@ -4,10 +4,25 @@ from .models import Event, Gallery
 
 
 def parser(event):
+    if event.event_stage1_name=="Null":
+        event.event_stage1_name=None
+        event.event_stage1_artists=None
+    else:
+        event.event_stage1_name = event.event_stage1_name.split('.,!')
+        event.event_stage1_artists = event.event_stage1_artists.split(',')
+    if event.event_stage2_name=="Null":
+        event.event_stage2_name=None
+        event.event_stage2_artists=None
+    else:
+        event.event_stage2_name = event.event_stage2_name.split('.,!')
+        event.event_stage2_artists = event.event_stage2_artists.split(',')
+    if event.event_stage3_name=="Null":
+        event.event_stage3_name=None
+        event.event_stage3_artists=None
+    else:
+        event.event_stage3_name=event.event_stage3_name.split('.,!')
+        event.event_stage3_artists = event.event_stage3_artists.split(',')
 
-    event.event_stage1_artists=event.event_stage1_artists.split(',')
-    event.event_stage2_artists=event.event_stage2_artists.split(',')
-    event.event_stage3_artists=event.event_stage3_artists.split(',')
     return event
 
 def index(request):

@@ -6,7 +6,7 @@ Author URI: http://www.bootstrapthemes.co
 */
 
 /* Portrait tablets and medium desktops */
-@media (max-width: 1199px) {
+@media (max-width: 3599px) {
     body {
         font-size: 1rem;
     }
@@ -65,11 +65,11 @@ height: 35vw ;}
         border-color: transparent;
         text-align: center;
     }
-    
+
     .copyright_text{
         text-align: center;
     }
-    .footer_socail{ 
+    .footer_socail{
         text-align: center;
     }
     .counter {
@@ -143,4 +143,3 @@ height: 100vw ;}
 
 
 }
-
