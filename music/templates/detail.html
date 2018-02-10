@@ -96,10 +96,25 @@
 
                             <div class="col-xs-6  " >
                                 <ul>
-                                    <li>price : {{ event.event_tkPrice }} € </li>
-                                    <li>artists: {{ event.event_artist }}  </li>
-                                    <li>date : {{ event.time }}  </li>
+                                    <li>Price : {{ event.event_tkPrice }} € </li>
+                                    <br>
+                                    <li>Artists: {{ event.event_stage1_name }}  </li>
+                                                                      <li class="info">{{ event.event_stage1_name }}</li>
+                                            {% for i in event.event_stage1_artists  %}
+                                                                                        <p class="artistinfo">{{ i }}<p>
+                                            {% endfor %}
+                                          <li class="info">{{ event.event_stage2_name }}</li>
+                                            {% for i in event.event_stage2_artists  %}
+                                                                                        <p class="artistinfo">{{ i }}<p>
+                                            {% endfor %}
+                                          <li class="info">{{ event.event_stage3_name }}</li>
+                                            {% for i in event.event_stage3_artists  %}
+                                                                                        <p class="artistinfo">{{ i }}<p>
+                                            {% endfor %}
 
+                                    <li>Date : {{ event.time }}  </li>
+                                    <br>
+                                    <br>
                                     <li>{{ event.information }}  </li>
                                 </ul>
                             </div>

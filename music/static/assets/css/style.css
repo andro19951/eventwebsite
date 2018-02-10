@@ -270,10 +270,10 @@ ul{
     margin:0 !important;
 }
 .fluid-blocks-col {
-    padding: 70px 40px 0 80px;
+    padding: 0 40px 0 80px;
 }
 .fluid-blocks-col-right {
-    padding: 70px 80px 0 40px;
+    padding: 0px 80px 0 40px;
 }
 /*
 Separator
@@ -765,25 +765,22 @@ input::-ms-input-placeholder {
     width: 90%;
     height: 88%;
     background-color: #1f1f1f;
-    padding: 90px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
 }
 .centeringthisshit{
     text-align: center;
 }
-.info{
-    color:white;
-    text-align: center;
-    border-bottom: 1px solid white;
-}
+
+
 .mixi_portfolio_overlay .overflow_hover_text i{
     color:#fff;
     font-size: 0.875rem;
     width:35px;
     height: 35px;
     display: inline-block;
-    line-height: 35px;
+    line-height: 25px;
     text-align: center;
-
+    padding: 0;
 }
 .mixi_portfolio_overlay .overflow_hover_text i:hover{
     color:#fff;
@@ -990,3 +987,18 @@ input::-ms-input-placeholder {
 .col-md-3{
   width:30%;
   }
+
+.info{
+    padding: 0;
+    margin: 0;
+    color:white;
+    text-align: center;
+    border-bottom: 1px solid white;
+}
+.artistinfo{
+    padding: 0;
+    margin: 0;
+    color:white;
+    text-align: right;
+    size: 0.2em;
+}
